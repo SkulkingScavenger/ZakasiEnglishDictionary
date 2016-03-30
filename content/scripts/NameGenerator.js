@@ -17,6 +17,7 @@ var trisyllablePrefixList = [
 	"shik",
 	"shak",
 	"shiz",
+	"shin",
 	"shaz",
 	"jak",
 	"jah",
@@ -75,7 +76,7 @@ var trisyllableSuffixListFeminine = [
 	"azi",
 	"iza",
 	"izu",
-	"enzi",
+	"zi",
 ];
 
 var bisyllablePrefixList = [
