@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Khurikash Lair</title>
+		<meta charset="utf-8"/>
+		<link rel="icon" href="content/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="clanstyle.css" type="text/css" media="all"/>
+	</head>
+	
+	<body>
+		<div id="header"></div>
+		<script src="content/scripts/IncludeHeader.js"></script>
+		<h1>Zakasi Dictionary</h1>
+		<div id="main">
+			<div id=onlycolumn>
+				<p>
+				use the text input to look up words. press buttons to do things
+				</p>
+				<br>
+				<div style="overflow:hidden">
+					<div style="float:left; width:30%; margin-left:3%;">
+						<br>
+						<b>Search the Zakasi Dictionary</b><br>
+						<input id="searchBox" type="text" value="" placeholder="zakasi word">
+						<button onclick="searchZakasi();">Search</button>
+						<div id="searchOutput"></div>
+					</div>
+					<div style="float:left; width:30%; margin:3%">
+						<b>Translate an English Word</b><br>
+						<input id="translateBox" type="text" value="" placeholder="english word">
+						<button onclick="searchEnglish();">Translate</button>
+						<div id="translateOutput"></div>
+					</div>
+					<div style="float:left; width:30%;">
+						<br>
+						<b>Generate a Random Zakasi Name</b><br>
+						<button onclick="getName();">Generate</button>
+						<textarea id="randomNameOutput" readonly="true" style="height:16px; vertical-align:middle"></textarea><br>
+						<b>Select Name Gender</b><br>
+						<input type="radio" name="genderSelector" value="masculine" onclick="selectGender();" checked>Masculine<br>
+						<input type="radio" name="genderSelector" value="feminine" onclick="selectGender();">Feminine<br>
+						
+					</div>
+				</div>
+				<div>
+					<hr>
+					<b>Select Language</b><br>
+					<input type="radio" name="languageSelector" value="zakasi" onclick="switchLanguage();" checked>Zakasi<br>
+					<input type="radio" name="languageSelector" value="english" onclick="switchLanguage();">English<br>
+					<div id="dictionaryIndex"></div>
+					<hr>
+				</div>
+
+				<div id="dictionaryDisplay"></div>
+			</div>
+		</div>
+		<div id="footer"></div>
+		<script src="content/scripts/IncludeFooter.js"></script>
+		<script src="content/scripts/DictionaryModel.js"></script>
+		<script src="content/scripts/DictionaryController.js"></script>
+		<script src="content/scripts/nameGenerator.js"></script>
+	</body>
+</html>

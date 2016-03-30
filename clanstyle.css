@@ -1,0 +1,124 @@
+a:link {
+	color:#a0c0ff;
+}
+
+a:visited {
+	color:#0000ff;
+}
+
+a:hover {
+	color:#ff8500;
+}
+
+body {
+	background: #000000;
+	background-size: cover;
+}
+
+div.textwall p{
+	text-indent: 50px;
+}
+
+div.textwall {
+	margin: 50px;
+}
+
+
+div.navbar {
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+}
+
+div.profile {
+	border: 4px solid;
+	border-color: #840000;
+	overflow: auto;
+}
+
+div.profile img{
+	float:left;
+}
+
+div.infobox {
+	border:4px solid;
+	padding: 10px;
+	margin: 20px;
+}
+
+div.sidebar {
+	float: right;
+	border:4px solid;
+	padding: 10px;
+	margin: 20px;
+}
+
+h1 {
+	text-align: center;
+	color: #ff0000;
+	font-weight: 1200;
+}
+
+h2 {
+	text-align: center;
+	color: #ff0000;
+}
+
+#header {
+	text-align: center;
+	color: #ff0000;
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 12px;
+	border-bottom: 2px solid;
+	border-color: #840000;
+	background: #000000;
+	overflow:auto;
+}
+
+#footer {
+	text-align: center;
+	color: #840000;
+}
+
+#main{
+	color: #ff0000;
+	width: 100%;
+	overflow: auto;
+	padding-right: 5%;
+}
+
+#onlycolumn{
+	padding: 5px;
+	width: 96%;
+	margin: 2%;
+	border: 4px solid;
+	border-color: #840000;
+}
+
+#rightcolumn{
+	margin-right: 3%;
+	float: left;
+	width: 20%;
+	padding: 10px;
+	padding-bottom: 50px;
+	border: 4px solid;
+	overflow: auto;
+}
+
+#centercolumn{
+	float: left;
+	width: 46%;
+	padding: 10px;
+	overflow: auto;
+}
+
+#leftcolumn{
+	margin-left: 3%;
+	float:left;
+	width: 20%;
+	padding: 10px;
+	padding-bottom: 50px;
+	border: 4px solid;
+	overflow: auto;
+}
