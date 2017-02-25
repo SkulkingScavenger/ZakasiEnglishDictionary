@@ -41,7 +41,7 @@ var trisyllablePrefixList = [
 	"rak",
 	"rik",
 	"reek",
-	"mak",
+	"heez",
 	"snik",
 	"snak",
 	"skiz",
@@ -82,18 +82,24 @@ var trisyllableSuffixListFeminine = [
 var bisyllablePrefixList = [
 	"zaj",
 	"haz",
-	"rag",
+	"ragsh",
 	"grar",
+	"shigr",
+	"karn",
 	"yar",
 	"kih",
 	"kah",
 	"keer",
+	"skag",
+	"hazr",
 ];
 
 var bisyllableSuffixListMasculine = [
 	"eer",
 	"ak",
 	"ar",
+	"ir",
+	"ik",
 ];
 
 var bisyllableSuffixListFeminine = [
@@ -101,12 +107,6 @@ var bisyllableSuffixListFeminine = [
 	"i",
 ];
 
-var wierdBisyllables = [
-	"ragsheer",
-	"hazrak",
-	"shigrak",
-	"karnak",
-];
 
 var banList = [
 	"shazira",
@@ -135,23 +135,20 @@ var selectGender = function(){
 var generateName = function(){
 	var prefix, suffix;
 	var choice = Math.floor(Math.random()*100)%100;
-	if (choice > 25){
+	if (choice > 50){
 		prefix = trisyllablePrefixList[Math.floor(Math.random()*1000)%trisyllablePrefixList.length];
 		if (gender == "masculine"){
 			suffix = trisyllableSuffixListMasculine[Math.floor(Math.random()*1000)%trisyllableSuffixListMasculine.length];
 		}else{
 			suffix = trisyllableSuffixListFeminine[Math.floor(Math.random()*1000)%trisyllableSuffixListFeminine.length];
 		}
-	}else if (choice > 10){
+	}else{
 		prefix = bisyllablePrefixList[Math.floor(Math.random()*1000)%bisyllablePrefixList.length];
 		if (gender == "masculine"){
 			suffix = bisyllableSuffixListMasculine[Math.floor(Math.random()*1000)%bisyllableSuffixListMasculine.length];
 		}else{
 			suffix = bisyllableSuffixListFeminine[Math.floor(Math.random()*1000)%bisyllableSuffixListFeminine.length];
 		}
-	}else{
-		prefix = wierdBisyllables[Math.floor(Math.random()*1000)%wierdBisyllables.length];
-		suffix = "";
 	}
 	return prefix + suffix;
 };

@@ -147,7 +147,7 @@ var searchZakasi = function(){
 		lastcreated.appendChild(gram);
 		searchResultDisplay.appendChild(def);
 	}else{
-		searchResultDisplay.innerHTML = '"' + target.value.toLowerCase() + '"' + "? that ain't gnollish!";
+		searchResultDisplay.innerHTML = '"' + target.value.toLowerCase() + '"' + "? that's not a zakasi word and if it is, we sure don't have it in the dictionary.";
 	}
 };
 
